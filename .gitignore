@@ -1,0 +1,8 @@
+.env
+*.pem
+*.key
+models/
+*.safetensors
+*.bin
+__pycache__/
+results/raw/
