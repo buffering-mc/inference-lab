@@ -5,7 +5,7 @@ name = "Qwen/Qwen2.5-0.5B-Instruct"
 tok = AutoTokenizer.from_pretrained(name)
 model = AutoModelForCausalLM.from_pretrained(name, dtype=torch.float16).to("cuda")
 
-msgs = [{"role": "user", "content": "Explain the KV cache in one paragraph."}]
+msgs = [{"role": "user", "content": "Explain the CPU cache in one paragraph."}]
 inputs = tok.apply_chat_template(
     msgs, add_generation_prompt=True, return_tensors="pt", return_dict=True
 ).to("cuda")
